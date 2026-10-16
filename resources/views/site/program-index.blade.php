@@ -4,21 +4,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Program Bimbel Gambar Seni Rupa, Desain & Arsitektur | Villa Merah</title>
-<meta name="description" content="Bandingkan 11 program Villa Merah: Intensif SNBP, SNBT, Seleksi Mandiri, Arsitektur, Online, Blended, hingga SD & SMP. Pilih jalur dan format belajar yang paling sesuai.">
-<link rel="canonical" href="https://villamerah.com/program">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/program">
-<meta property="og:title" content="Program Bimbel Gambar Seni Rupa, Desain & Arsitektur | Villa Merah">
-<meta property="og:description" content="Bandingkan 11 program Villa Merah: Intensif SNBP, SNBT, Seleksi Mandiri, Arsitektur, Online, Blended, hingga SD & SMP. Pilih jalur dan format belajar yang paling sesuai.">
-<meta property="og:image" content="/assets/img/kegiatan-still-life.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -34,9 +34,11 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://villamerah.com/"},{"@type":"ListItem","position":2,"name":"Program","item":"https://villamerah.com/program"}]}
-</script>
+
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -146,8 +148,16 @@
       <div class="mt-6 grid gap-8 lg:grid-cols-12 lg:items-end">
         <div class="lg:col-span-7">
           <p class="eyebrow">Semua program</p>
-          <h1 class="h-display mt-4 text-balance">Satu tujuan, banyak jalan masuk.</h1>
-          <p class="lead mt-5 max-w-2xl text-pretty">Pilih berdasarkan jurusan tujuan, jalur seleksi, dan cara belajar yang paling cocok dengan jadwalmu. Semua program mencakup review karya personal oleh pengajar.</p>
+          <h1 class="h-display mt-4 text-balance">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimSatu tujuan, banyak jalan masuk.@endverbatim
+@endif
+@verbatim</h1>
+          <p class="lead mt-5 max-w-2xl text-pretty">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimPilih berdasarkan jurusan tujuan, jalur seleksi, dan cara belajar yang paling cocok dengan jadwalmu. Semua program mencakup review karya personal oleh pengajar.@endverbatim
+@endif
+@verbatim</p>
         </div>
         <div class="lg:col-span-5 lg:justify-self-end">
           <div class="card p-5 text-sm">
@@ -238,6 +248,9 @@
       <div class="lg:col-span-5"><div class="rounded-2xl bg-paper/5 p-8 ring-1 ring-paper/10"><p class="font-display text-2xl">Masih ragu?</p><p class="mt-2 text-paper/60">Ceritakan tujuanmu, kami rekomendasikan program yang tepat — gratis.</p><a href="https://wa.me/6285720070066?text=Halo%2C%20saya%20ingin%20rekomendasi%20program%20yang%20cocok." target="_blank" rel="noopener" class="btn-wa mt-6 w-full">Konsultasi via WhatsApp</a><a class='btn mt-3 w-full border border-paper/30 text-paper hover:bg-paper hover:text-ink' href='/daftar'>Langsung daftar</a></div></div>
     </div>
   </section>
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 <footer class="relative mt-24 bg-ink text-paper">
   <div class="container-x py-16">

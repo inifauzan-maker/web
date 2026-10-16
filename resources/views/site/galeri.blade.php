@@ -4,21 +4,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Galeri Karya Siswa & Kegiatan Bimbel Gambar Villa Merah</title>
-<meta name="description" content="Lihat karya siswa Villa Merah: gambar naratif, komposisi, cat air, dan maket. Dokumentasi Art Camp, workshop, kunjungan galeri, dan kelas online.">
-<link rel="canonical" href="https://villamerah.com/galeri">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/galeri">
-<meta property="og:title" content="Galeri Karya Siswa & Kegiatan Bimbel Gambar Villa Merah">
-<meta property="og:description" content="Lihat karya siswa Villa Merah: gambar naratif, komposisi, cat air, dan maket. Dokumentasi Art Camp, workshop, kunjungan galeri, dan kelas online.">
-<meta property="og:image" content="/assets/img/karya-2.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -34,7 +34,11 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://villamerah.com/"},{"@type":"ListItem","position":2,"name":"Galeri","item":"https://villamerah.com/galeri"}]},{"@type":"ImageGallery","name":"Galeri Karya Siswa Villa Merah","url":"https://villamerah.com/galeri"}]}</script>
+
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -138,7 +142,15 @@
 <main id="konten" class="pt-[72px]" x-data="{ album: 'karya' }">
   <section class="container-x py-12 lg:py-16">
     <nav aria-label="Breadcrumb" class="text-xs text-ink-4"><ol class="flex gap-2"><li><a class='hover:text-ink' href='/'>Beranda</a></li><li aria-hidden="true">/</li><li aria-current="page" class="text-ink">Galeri</li></ol></nav>
-    <div class="mt-6 max-w-2xl"><p class="eyebrow">Galeri</p><h1 class="h-display mt-4">Karya siswa &amp; kehidupan studio.</h1><p class="lead mt-4">Dari coretan awal sampai portofolio siap kirim — dan semua yang terjadi di antaranya.</p></div>
+    <div class="mt-6 max-w-2xl"><p class="eyebrow">Galeri</p><h1 class="h-display mt-4">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimKarya siswa &amp; kehidupan studio.@endverbatim
+@endif
+@verbatim</h1><p class="lead mt-4">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimDari coretan awal sampai portofolio siap kirim — dan semua yang terjadi di antaranya.@endverbatim
+@endif
+@verbatim</p></div>
 
     <!-- Album tabs -->
     <div class="mt-10 flex gap-2 overflow-x-auto [scrollbar-width:none]" role="tablist" aria-label="Album">
@@ -218,6 +230,9 @@
   </section>
 
   <section class="container-x"><div class="rounded-3xl bg-ink p-8 text-paper sm:p-12 lg:flex lg:items-center lg:justify-between"><div><h2 class="h-section text-paper">Ingin karyamu ada di sini?</h2><p class="mt-2 text-paper/60">Mulai dari dasar, kami bimbing sampai portofolio siap.</p></div><a class='btn-primary btn-lg mt-6 lg:mt-0' href='/daftar'>Daftar Sekarang</a></div></section>
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 <footer class="relative mt-24 bg-ink text-paper">
   <div class="container-x py-16">

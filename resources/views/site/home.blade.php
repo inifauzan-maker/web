@@ -5,21 +5,21 @@
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bimbel Gambar Persiapan Masuk FSRD ITB & Arsitektur | Villa Merah Bandung</title>
-<meta name="description" content="Bimbel gambar Villa Merah: persiapan SNBP, SNBT & Seleksi Mandiri untuk Seni Rupa, Desain & Arsitektur. Pengajar berpengalaman sejak 1992, kelas offline di Bandung & Jakarta serta online.">
-<link rel="canonical" href="https://villamerah.com/">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/">
-<meta property="og:title" content="Bimbel Gambar Persiapan Masuk FSRD ITB & Arsitektur | Villa Merah Bandung">
-<meta property="og:description" content="Bimbel gambar Villa Merah: persiapan SNBP, SNBT & Seleksi Mandiri untuk Seni Rupa, Desain & Arsitektur. Pengajar berpengalaman sejak 1992, kelas offline di Bandung & Jakarta serta online.">
-<meta property="og:image" content="/assets/img/karya-1.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -35,33 +35,11 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "EducationalOrganization",
-      "@id": "https://villamerah.com/#org",
-      "name": "Bimbel Gambar Villa Merah",
-      "alternateName": "Villa Merah",
-      "url": "https://villamerah.com/",
-      "logo": "https://villamerah.com/assets/img/logo.png",
-      "telephone": "+6285720070066",
-      "sameAs": ["https://instagram.com/bimbelgambar_villamerah","https://facebook.com/bimbel.villamerah","https://youtube.com/channel/UCCheW9-S6rzlSC8QUcnrMpA","https://twitter.com/vilmerbandung"],
-      "address": {"@type":"PostalAddress","streetAddress":"Jl. Anggrek No. 49","addressLocality":"Bandung","addressRegion":"Jawa Barat","addressCountry":"ID"},
-      "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"17:00"}
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://villamerah.com/#website",
-      "url": "https://villamerah.com/",
-      "name": "Villa Merah",
-      "publisher": {"@id": "https://villamerah.com/#org"},
-      "inLanguage": "id-ID"
-    }
-  ]
-}
-</script>
+
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -173,8 +151,16 @@
     <div class="container-x relative grid items-center gap-12 py-16 lg:grid-cols-12 lg:py-24">
       <div class="lg:col-span-6">
         <p class="eyebrow reveal">Bimbel gambar · sejak 1992 · Bandung &amp; Jakarta</p>
-        <h1 class="h-display mt-5 text-balance reveal">Siap masuk <span class="mark-brush">FSRD ITB</span> &amp; Arsitektur — dari coretan pertama sampai portofolio.</h1>
-        <p class="lead mt-6 max-w-xl text-pretty reveal">Persiapan SNBP, SNBT, dan Seleksi Mandiri untuk Seni Rupa, Desain, dan Arsitektur. Dibimbing pengajar alumni FSRD ITB, di studio bersejarah tahun 1922 atau online dari mana saja.</p>
+        <h1 class="h-display mt-5 text-balance reveal">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimSiap masuk <span class="mark-brush">FSRD ITB</span> &amp; Arsitektur — dari coretan pertama sampai portofolio.@endverbatim
+@endif
+@verbatim</h1>
+        <p class="lead mt-6 max-w-xl text-pretty reveal">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimPersiapan SNBP, SNBT, dan Seleksi Mandiri untuk Seni Rupa, Desain, dan Arsitektur. Dibimbing pengajar alumni FSRD ITB, di studio bersejarah tahun 1922 atau online dari mana saja.@endverbatim
+@endif
+@verbatim</p>
         <div class="mt-8 flex flex-wrap gap-3 reveal">
           <a class='btn-primary btn-lg' href='/program-index'>Lihat Program</a>
           <a href="https://wa.me/6285720070066?text=Halo%20Villa%20Merah%2C%20saya%20ingin%20konsultasi%20program." target="_blank" rel="noopener" class="btn-outline btn-lg">
@@ -525,26 +511,9 @@
         <div><p class="eyebrow">Blog &amp; Info</p><h2 id="blog-heading" class="h-section mt-4">Panduan SNBP, SNBT, dan jurusan seni.</h2></div>
         <a class='btn-outline' href='/blog'>Semua artikel</a>
       </div>
-      <div class="mt-12 grid gap-8 md:grid-cols-3">
-        <article class="group reveal">
-          <a aria-hidden='true' class='block overflow-hidden rounded-2xl' href='/blog-post' tabindex='-1'><img src="/assets/img/kegiatan-nyoman-nuarta.webp" srcset="assets/img/kegiatan-nyoman-nuarta-sm.webp 320w, assets/img/kegiatan-nyoman-nuarta.webp 500w" sizes="(max-width: 640px) 90vw, 480px" alt="" width="500" height="500" loading="lazy" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"></a>
-          <div class="mt-5 flex items-center gap-3 text-xs text-ink-4"><span class="chip-brand">SNBT</span><time datetime="2025-01-10">10 Jan 2025</time><span>· 6 menit baca</span></div>
-          <h3 class="h-card mt-3"><a class='hover:text-brand-700' href='/blog-post'>Materi Pengetahuan dan Pemahaman Umum – UTBK SNBT</a></h3>
-          <p class="mt-2 line-clamp-2 text-sm text-ink-3">Apa saja yang diujikan di subtes PPU, contoh soal, dan strategi belajarnya untuk calon mahasiswa seni dan desain.</p>
-        </article>
-        <article class="group reveal">
-          <a aria-hidden='true' class='block overflow-hidden rounded-2xl' href='/blog-post' tabindex='-1'><img src="/assets/img/kegiatan-pameran.webp" srcset="assets/img/kegiatan-pameran-sm.webp 320w, assets/img/kegiatan-pameran.webp 500w" sizes="(max-width: 640px) 90vw, 480px" alt="" width="500" height="500" loading="lazy" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"></a>
-          <div class="mt-5 flex items-center gap-3 text-xs text-ink-4"><span class="chip-brand">SNBP</span><time datetime="2024-12-20">20 Des 2024</time><span>· 5 menit baca</span></div>
-          <h3 class="h-card mt-3"><a class='hover:text-brand-700' href='/blog-post'>Syarat dan Ketentuan Umum SNBP 2025</a></h3>
-          <p class="mt-2 line-clamp-2 text-sm text-ink-3">Kriteria siswa eligible, dokumen yang harus disiapkan, dan bobot portofolio 50% untuk jurusan seni.</p>
-        </article>
-        <article class="group reveal">
-          <a aria-hidden='true' class='block overflow-hidden rounded-2xl' href='/blog-post' tabindex='-1'><img src="/assets/img/kegiatan-workshop-maket.webp" srcset="assets/img/kegiatan-workshop-maket-sm.webp 320w, assets/img/kegiatan-workshop-maket.webp 500w" sizes="(max-width: 640px) 90vw, 480px" alt="" width="500" height="375" loading="lazy" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"></a>
-          <div class="mt-5 flex items-center gap-3 text-xs text-ink-4"><span class="chip-brand">Info Jurusan</span><time datetime="2024-11-05">5 Nov 2024</time><span>· 7 menit baca</span></div>
-          <h3 class="h-card mt-3"><a class='hover:text-brand-700' href='/blog-post'>Mengenal Jurusan Desain Produk</a></h3>
-          <p class="mt-2 line-clamp-2 text-sm text-ink-3">Apa yang dipelajari, prospek kerja, dan portofolio seperti apa yang dicari kampus.</p>
-        </article>
-      </div>
+@endverbatim
+@include('site.home-articles')
+@verbatim
     </div>
   </section>
 
@@ -613,6 +582,9 @@
     </div>
   </section>
 
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 
 <footer class="relative mt-24 bg-ink text-paper">

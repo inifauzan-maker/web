@@ -4,21 +4,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tentang Villa Merah — Bimbel Gambar Sejak 1992 di Bangunan Bersejarah 1922</title>
-<meta name="description" content="Sejarah Villa Merah (dibangun 1922 oleh R.L.A. Schoemaker, eks asrama ITB), metode belajar, pengajar, testimoni alumni, FAQ lengkap SNBP/SNBT/Mandiri, dan lokasi studio Bandung & Jakarta.">
-<link rel="canonical" href="https://villamerah.com/tentang">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/tentang">
-<meta property="og:title" content="Tentang Villa Merah — Bimbel Gambar Sejak 1992 di Bangunan Bersejarah 1922">
-<meta property="og:description" content="Sejarah Villa Merah (dibangun 1922 oleh R.L.A. Schoemaker, eks asrama ITB), metode belajar, pengajar, testimoni alumni, FAQ lengkap SNBP/SNBT/Mandiri, dan lokasi studio Bandung & Jakarta.">
-<meta property="og:image" content="/assets/img/villa-1922.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -34,7 +34,11 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://villamerah.com/"}, {"@type": "ListItem", "position": 2, "name": "Tentang"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Saya tidak punya bakat menggambar, apakah bisa masuk FSRD atau Arsitektur?", "acceptedAnswer": {"@type": "Answer", "text": "Bisa. Dengan latihan berkelanjutan dan bimbingan pengajar berpengalaman, kemampuan menggambar dapat dikembangkan hingga cukup untuk lolos seleksi program-program tersebut."}}, {"@type": "Question", "name": "Apa yang harus disiapkan calon mahasiswa Arsitektur?", "acceptedAnswer": {"@type": "Answer", "text": "Meski jalur seleksi saat ini tidak mensyaratkan tes gambar atau portofolio, kemampuan sketsa tetap sangat dibutuhkan saat perkuliahan. Program Arsitektur kami membekali gambar teknik, perspektif, dan kecerdasan spasial."}}, {"@type": "Question", "name": "Apakah siswa jurusan IPA bisa ikut seleksi FSRD?", "acceptedAnswer": {"@type": "Answer", "text": "Bisa. Sejak aturan seleksi nasional terbaru tidak ada lagi pemisahan tes Saintek/Soshum, sehingga siswa IPA dapat memilih FSRD tanpa syarat lintas jurusan."}}, {"@type": "Question", "name": "Apakah Villa Merah juga mengajarkan Tes Potensi Skolastik?", "acceptedAnswer": {"@type": "Answer", "text": "Ya. Tersedia video tutorial dan kelas live untuk TPS sebagai pelengkap materi menggambar, termasuk simulasi try out."}}, {"@type": "Question", "name": "Apa itu SNBP?", "acceptedAnswer": {"@type": "Answer", "text": "Seleksi Nasional Berdasarkan Prestasi (dulu SNMPTN). Penilaian berdasarkan prestasi akademik dan non-akademik; siswa dapat memilih prodi berdasarkan minat, tidak terikat jurusan SMA."}}, {"@type": "Question", "name": "Siapa yang bisa ikut SNBP?", "acceptedAnswer": {"@type": "Answer", "text": "Siswa kelas XII dengan prestasi unggul, memiliki NISN, nilai rapor semester 1–5, dan mengunggah portofolio untuk prodi seni/olahraga."}}, {"@type": "Question", "name": "Apa itu siswa 'eligible'?", "acceptedAnswer": {"@type": "Answer", "text": "Siswa yang memenuhi kriteria sekolah berdasarkan rata-rata nilai seluruh mata pelajaran semester 1–5. Kuota eligible ditentukan oleh akreditasi sekolah."}}, {"@type": "Question", "name": "Apa saja jenis portofolio Seni Rupa?", "acceptedAnswer": {"@type": "Answer", "text": "Dua jenis: (1) Gambar Naratif — menampilkan hubungan manusia dan lingkungan dengan informasi konteks lengkap; (2) Karya Bebas/Karya Terbaik — potret, lukisan, gambar hewan, dengan berbagai media."}}, {"@type": "Question", "name": "Berapa bobot portofolio dalam kelulusan SNBP?", "acceptedAnswer": {"@type": "Answer", "text": "Untuk program studi seni, portofolio berbobot 50% dan prestasi akademik 50%."}}, {"@type": "Question", "name": "Apakah indeks sekolah mempengaruhi penerimaan?", "acceptedAnswer": {"@type": "Answer", "text": "Ya, cukup signifikan. PTN mempertimbangkan rekam jejak pendaftar dan lulusan dari sekolah yang sama pada tahun-tahun sebelumnya."}}, {"@type": "Question", "name": "Apa itu SNBT?", "acceptedAnswer": {"@type": "Answer", "text": "Seleksi Nasional Berdasarkan Tes (dulu SBMPTN), berupa UTBK berbasis komputer yang menguji Tes Potensi Skolastik, literasi, dan penalaran matematika — tanpa tes mata pelajaran."}}, {"@type": "Question", "name": "Siapa yang bisa ikut SNBT?", "acceptedAnswer": {"@type": "Answer", "text": "Pemilik akun SNPMB, WNI, lulusan SMA/sederajat maksimal 3 tahun terakhir, usia di bawah 25 tahun, bukan peserta yang sudah lolos SNBP, dan mengunggah portofolio untuk prodi seni."}}, {"@type": "Question", "name": "Saya sudah lulus SMA (gap year), masih bisa daftar SNBT?", "acceptedAnswer": {"@type": "Answer", "text": "Bisa, maksimal tiga tahun setelah kelulusan sesuai ketentuan SNPMB."}}, {"@type": "Question", "name": "Apakah PTN menetapkan passing grade UTBK?", "acceptedAnswer": {"@type": "Answer", "text": "Umumnya PTN tidak mengumumkan passing grade; batas lolos bergantung pada sebaran skor pendaftar tahun berjalan."}}, {"@type": "Question", "name": "Apa itu Seleksi Mandiri?", "acceptedAnswer": {"@type": "Answer", "text": "Sistem penerimaan mahasiswa baru yang diselenggarakan sendiri oleh masing-masing PTN setelah pengumuman SNBT, berdasarkan kriteria akademik yang ditetapkan kampus."}}, {"@type": "Question", "name": "Apa syarat peserta Seleksi Mandiri?", "acceptedAnswer": {"@type": "Answer", "text": "Setiap PTN menetapkan syaratnya sendiri. Beberapa (mis. ITB, UNPAR, ISI) masih mengujikan tes menggambar langsung — inilah fokus Program Intensif Seleksi Mandiri."}}, {"@type": "Question", "name": "Bagaimana pembagian kuota SNBP, SNBT, dan Mandiri?", "acceptedAnswer": {"@type": "Answer", "text": "SNBP minimal 20%, SNBT minimal 40% (PTN reguler) atau 30% (PTN-BH), Seleksi Mandiri maksimal 30% (PTN reguler) atau 50% (PTN-BH)."}}]}]}</script>
+
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -143,8 +147,16 @@
       <div class="lg:col-span-6">
         <nav aria-label="Breadcrumb" class="text-xs text-ink-4"><ol class="flex gap-2"><li><a class='hover:text-ink' href='/'>Beranda</a></li><li aria-hidden="true">/</li><li aria-current="page" class="text-ink">Tentang</li></ol></nav>
         <p class="eyebrow mt-6">Tentang Villa Merah</p>
-        <h1 class="h-display mt-4 text-balance">Rumah tempat generasi seniman &amp; arsitek bermula.</h1>
-        <p class="lead mt-5 text-pretty">Villa Merah dibangun tahun 1922 oleh arsitek Belanda R.L.A. Schoemaker sebagai rumah dinas guru besar ITB, lalu menjadi asrama mahasiswa. Dari rumah inilah bimbingan belajar Seni Rupa Desain ITB dan Arsitektur bermula — dan masih berjalan hingga hari ini.</p>
+        <h1 class="h-display mt-4 text-balance">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimRumah tempat generasi seniman &amp; arsitek bermula.@endverbatim
+@endif
+@verbatim</h1>
+        <p class="lead mt-5 text-pretty">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimVilla Merah dibangun tahun 1922 oleh arsitek Belanda R.L.A. Schoemaker sebagai rumah dinas guru besar ITB, lalu menjadi asrama mahasiswa. Dari rumah inilah bimbingan belajar Seni Rupa Desain ITB dan Arsitektur bermula — dan masih berjalan hingga hari ini.@endverbatim
+@endif
+@verbatim</p>
       </div>
       <div class="relative lg:col-span-6">
         <div class="frame -rotate-1"><img src="/assets/img/villa-1922.webp" srcset="assets/img/villa-1922-sm.webp 320w, assets/img/villa-1922.webp 400w" sizes="(max-width: 640px) 90vw, 480px" alt="Bangunan Villa Merah, Jl. Anggrek No. 49 Bandung" width="400" height="400" class="aspect-[5/4] grayscale" fetchpriority="high"></div>
@@ -274,6 +286,9 @@
       <div class="mt-6 aspect-[21/9] w-full rounded-2xl bg-paper-3 ring-1 ring-line flex items-center justify-center text-sm text-ink-2">Placeholder embed Google Maps (Bandung)</div>
     </div>
   </section>
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 <footer class="relative mt-24 bg-ink text-paper">
   <div class="container-x py-16">

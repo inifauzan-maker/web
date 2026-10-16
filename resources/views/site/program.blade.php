@@ -4,21 +4,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Intensif SNBT Seni Rupa & Desain — Bimbel Persiapan FSRD ITB | Villa Merah</title>
-<meta name="description" content="Program Intensif SNBT Seni Rupa & Desain Villa Merah untuk kelas XII: persiapan UTBK + portofolio FSRD ITB. Offline di Bandung/Jakarta atau online, kurikulum khusus, video tutorial eksklusif.">
-<link rel="canonical" href="https://villamerah.com/program/intensif-snbt-seni-rupa-desain">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/program/intensif-snbt-seni-rupa-desain">
-<meta property="og:title" content="Intensif SNBT Seni Rupa & Desain — Bimbel Persiapan FSRD ITB | Villa Merah">
-<meta property="og:description" content="Program Intensif SNBT Seni Rupa & Desain Villa Merah untuk kelas XII: persiapan UTBK + portofolio FSRD ITB. Offline di Bandung/Jakarta atau online, kurikulum khusus, video tutorial eksklusif.">
-<meta property="og:image" content="/assets/img/kegiatan-still-life.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -34,13 +34,11 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
- {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://villamerah.com/"},{"@type":"ListItem","position":2,"name":"Program","item":"https://villamerah.com/program"},{"@type":"ListItem","position":3,"name":"Intensif SNBT Seni Rupa & Desain"}]},
- {"@type":"Course","name":"Intensif SNBT Seni Rupa & Desain","description":"Persiapan UTBK-SNBT dan portofolio untuk masuk FSRD ITB dan program studi seni/desain lainnya.","provider":{"@type":"EducationalOrganization","name":"Bimbel Gambar Villa Merah","sameAs":"https://villamerah.com/"},"offers":{"@type":"Offer","price":"9000000","priceCurrency":"IDR","availability":"https://schema.org/InStock","url":"https://villamerah.com/daftar"},"hasCourseInstance":[{"@type":"CourseInstance","courseMode":"Onsite","location":{"@type":"Place","name":"Villa Merah Bandung","address":"Jl. Anggrek No. 49, Bandung"}},{"@type":"CourseInstance","courseMode":"Online"}]},
- {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apakah program ini juga mencakup Tes Potensi Skolastik?","acceptedAnswer":{"@type":"Answer","text":"Ya. Selain menggambar, tersedia kelas live dan video tutorial TPS serta simulasi try out."}},{"@type":"Question","name":"Bisa pindah dari offline ke online di tengah program?","acceptedAnswer":{"@type":"Answer","text":"Bisa, koordinasikan dengan admin. Materi dan review karya tetap berjalan tanpa terputus."}}]}
-]}
-</script>
+
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden has-sticky-cta">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -149,8 +147,16 @@
       <div class="lg:col-span-7">
         <nav aria-label="Breadcrumb" class="text-xs text-ink-4"><ol class="flex flex-wrap gap-2"><li><a class='hover:text-ink' href='/'>Beranda</a></li><li aria-hidden="true">/</li><li><a class='hover:text-ink' href='/program-index'>Program</a></li><li aria-hidden="true">/</li><li aria-current="page" class="text-ink">Intensif SNBT Seni Rupa &amp; Desain</li></ol></nav>
         <div class="mt-6 flex flex-wrap gap-2"><span class="chip-brand">Seni Rupa &amp; Desain</span><span class="chip">Kelas XII</span><span class="chip">Offline / Online</span><span class="chip">Angkatan 2026</span></div>
-        <h1 class="h-display mt-5 text-balance">Intensif SNBT Seni Rupa &amp; Desain</h1>
-        <p class="lead mt-5 max-w-2xl text-pretty">Program khusus kelas XII untuk menembus FSRD ITB dan program studi seni/desain PTN lainnya lewat jalur SNBT: UTBK terlatih, portofolio tersusun, mental siap.</p>
+        <h1 class="h-display mt-5 text-balance">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimIntensif SNBT Seni Rupa &amp; Desain@endverbatim
+@endif
+@verbatim</h1>
+        <p class="lead mt-5 max-w-2xl text-pretty">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimProgram khusus kelas XII untuk menembus FSRD ITB dan program studi seni/desain PTN lainnya lewat jalur SNBT: UTBK terlatih, portofolio tersusun, mental siap.@endverbatim
+@endif
+@verbatim</p>
         <div class="mt-8 flex flex-wrap gap-3"><a class='btn-primary btn-lg' href='/daftar'>Daftar Program Ini</a><a href="https://wa.me/6285720070066?text=Halo%2C%20saya%20ingin%20tanya%20program%20Intensif%20SNBT%20Seni%20Rupa%20%26%20Desain." target="_blank" rel="noopener" class="btn-outline btn-lg">Tanya via WhatsApp</a></div>
       </div>
       <!-- Ringkasan sticky -->
@@ -288,6 +294,9 @@
     <a href="https://wa.me/6285720070066?text=Halo%2C%20saya%20ingin%20tanya%20program%20Intensif%20SNBT." target="_blank" rel="noopener" class="btn-wa px-4" aria-label="Tanya via WhatsApp"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
     <a class='btn-primary' href='/daftar'>Daftar</a>
   </div>
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 <footer class="relative mt-24 bg-ink text-paper">
   <div class="container-x py-16">

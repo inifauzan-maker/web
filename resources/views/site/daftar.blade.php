@@ -4,21 +4,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pendaftaran Bimbel Gambar Villa Merah — Daftar Online</title>
-<meta name="description" content="Daftar program bimbel gambar Villa Merah secara online. Isi formulir singkat, tim kami akan menghubungi via WhatsApp dalam 1×24 jam. Gratis biaya pendaftaran bulan ini.">
-<link rel="canonical" href="https://villamerah.com/daftar">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+
+
 <meta name="theme-color" content="#e42029">
 <!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Villa Merah — Bimbel Gambar Seni Rupa, Desain & Arsitektur">
-<meta property="og:locale" content="id_ID">
-<meta property="og:url" content="https://villamerah.com/daftar">
-<meta property="og:title" content="Pendaftaran Bimbel Gambar Villa Merah — Daftar Online">
-<meta property="og:description" content="Daftar program bimbel gambar Villa Merah secara online. Isi formulir singkat, tim kami akan menghubungi via WhatsApp dalam 1×24 jam. Gratis biaya pendaftaran bulan ini.">
-<meta property="og:image" content="/assets/img/kegiatan-cat-air.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@vilmerbandung">
+
+
+
+
+
+
+
+
+
 <link rel="icon" href="/assets/img/logo-icon.png" sizes="48x48">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <!-- Font: Fraunces (display) + Plus Jakarta Sans (body) -->
@@ -34,6 +34,10 @@
 <script defer src="/js/collapse.min.js"></script>
 <script defer src="/js/alpine.min.js"></script>
 
+@endverbatim
+@include('site.seo')
+@verbatim
+<link rel="stylesheet" href="/css/editorial.css">
 </head>
 <body class="overflow-x-hidden">
 <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lewati ke konten</a>
@@ -141,8 +145,16 @@
     <!-- Kiri: konteks -->
     <aside class="lg:col-span-5">
       <p class="eyebrow">Pendaftaran</p>
-      <h1 class="h-display mt-4 text-balance">Daftar dalam 2 menit.</h1>
-      <p class="lead mt-4 text-pretty">Isi data singkat, kami hubungi via WhatsApp untuk konfirmasi jadwal dan pembayaran. Tidak ada biaya di tahap ini.</p>
+      <h1 class="h-display mt-4 text-balance">@endverbatim
+@if(filled($pageContent?->heading)){{ $pageContent->heading }}@else
+@verbatimDaftar dalam 2 menit.@endverbatim
+@endif
+@verbatim</h1>
+      <p class="lead mt-4 text-pretty">@endverbatim
+@if(filled($pageContent?->intro)){{ $pageContent->intro }}@else
+@verbatimIsi data singkat, kami hubungi via WhatsApp untuk konfirmasi jadwal dan pembayaran. Tidak ada biaya di tahap ini.@endverbatim
+@endif
+@verbatim</p>
       <ol class="mt-8 space-y-5">
         <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display" :class="step >= 1 ? 'bg-brand-600 text-white' : 'bg-paper-2 text-ink-4'">1</span><div><p class="font-semibold">Isi formulir</p><p class="text-sm text-ink-3">Pilih program, lokasi, dan data kontak.</p></div></li>
         <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display" :class="step >= 2 ? 'bg-brand-600 text-white' : 'bg-paper-2 text-ink-4'">2</span><div><p class="font-semibold">Konfirmasi via WhatsApp</p><p class="text-sm text-ink-3">Admin menghubungi dalam 1×24 jam (Senin–Minggu, 10.00–17.00).</p></div></li>
@@ -210,6 +222,9 @@
       </div>
     </div>
   </div>
+@endverbatim
+@include('site.additional-content')
+@verbatim
 </main>
 <footer class="relative mt-24 bg-ink text-paper">
   <div class="container-x py-16">
